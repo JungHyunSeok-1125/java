@@ -15,7 +15,7 @@ import java.util.Scanner;
 public class OperationMain03 {
 
 	public static void main(String[] args) {
-		
+		   
 		Scanner sc = new Scanner(System.in);
 		//scanner 객체 가져온다. 
 		//키보드 표준 입력 장치 그냥 외워서 쓰세요
