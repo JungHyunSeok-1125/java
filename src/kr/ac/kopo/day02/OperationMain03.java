@@ -9,18 +9,18 @@ import java.util.Scanner;
  * 
  * 정수를 입력하세요 : 5
  * 5의 짝수유무 : false
- * 
+ *  
  * 단, 0이나 음수인 경우는 false 출력
  * */
 public class OperationMain03 {
-
-	public static void main(String[] args) {
+	      
+	public static void main(String[] args) { 
 		   
 		Scanner sc = new Scanner(System.in);
 		//scanner 객체 가져온다. 
 		//키보드 표준 입력 장치 그냥 외워서 쓰세요
 
-		//"정수를 입력하세요 : "문장을 출력
+		//"정수를 입력하세요 : "문장을 출력 
 		System.out.print("정수를 입력하세요 : ");
 		
 		//키보드로 정수를 입력
@@ -34,3 +34,5 @@ public class OperationMain03 {
 	}
 
 }
+
+
