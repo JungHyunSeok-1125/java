@@ -1,6 +1,8 @@
 package kr.ac.kopo.day01;
 
 /*
+ * 자료형은 8가지
+ * 
  * 상수 : 5가지
  * 1. 정수형 상수 : 10, 20, -123
  * 2. 실수형 상수 : 1.2, 3.14
@@ -8,7 +10,7 @@ package kr.ac.kopo.day01;
  * 4. 문자열 상수 : "abc", "A"
  * 5. 논리형 상수 : true, false
  * 
- * 
+ *  
  */
 public class ConstMain {
 
