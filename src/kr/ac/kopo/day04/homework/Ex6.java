@@ -25,7 +25,7 @@ import java.util.Scanner;
  	홀수의 총합:	XXX
  
  */
-public class ex6 {
+public class Ex6 {
 	public static void main(String[] args) {
 
 		Scanner sc = new Scanner(System.in);

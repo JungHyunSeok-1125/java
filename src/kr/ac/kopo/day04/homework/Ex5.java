@@ -9,42 +9,40 @@ package kr.ac.kopo.day04.homework;
  	13	17	...
  	
  */
-public class ex5 {
+public class Ex5 {
 
 	public static void main(String[] args) {
 
 		boolean bool = false;
-		
-		int[] arr = new int[100];
-		
+
 		System.out.println("2 ~ 100 사이의 소수를 출력");
 		for (int i = 2; i <= 100; i++) {
 			for (int j = 2; j < i; j++) {
-				if (i % j == 0 ) {
+				if (i % j == 0) {
 					bool = true;
-				}
+				} // IF :: 나머지가 0이면 bool변경
 			}
-			System.out.print(bool ? "" : i + " " );
+			System.out.print(bool ? "" : i + " ");// LINE :: bool이 false이면 출력
 			bool = false;
 		}
-		System.out.println("\n"+"======================================");
-		int count=1;
+		
+
+		int count = 0;
+
 		for (int i = 2; i <= 100; i++) {
 			for (int j = 2; j < i; j++) {
-				if (i % j == 0 ) {
+				if (i % j == 0) {
 					bool = true;
-				}
+				} // IF :: 나머지가 0이면 bool변경
 			}
-			if(bool) {				
-				System.out.print(i + " " );
-				count++;
-				bool = false;
-				if(count%5 == 0) {
+			if(!bool) {
+				System.out.print(i + " ");
+				count ++;
+				if(count % 5 ==0) {
 					System.out.println();
 				}
-			}
-			
+			}//IF :: bool이 false이면 출력, 출력 갯수가 5의 배수이면 줄내림
+			bool = false;//LINE :: bool 초기화
 		}
-		
 	}
 }

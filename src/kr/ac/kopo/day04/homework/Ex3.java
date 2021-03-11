@@ -17,7 +17,7 @@ package kr.ac.kopo.day04.homework;
  	[XX시간 후]달팽이가 올라간 총 높이 : 100M or 101M or 102M
   
  */
-public class ex3 {
+public class Ex3 {
 
 	public static void main(String[] args) {
 

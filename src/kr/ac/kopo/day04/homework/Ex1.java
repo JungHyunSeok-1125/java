@@ -9,7 +9,7 @@ import java.util.Scanner;
  	
  	39 12 7
  */
-public class ex1 {
+public class Ex1 {
 
 	public static void main(String[] args) {
 
