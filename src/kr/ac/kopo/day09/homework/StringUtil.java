@@ -124,18 +124,16 @@ public class StringUtil {
 	 * @param str
 	 * @return 뒤집어진 문자열
 	 */
-	public String reverseString(String str) {
+	public StringBuilder reverseString(String str) {
 
-		char[] reverse = new char[str.length()];
+		StringBuilder sb = new StringBuilder();
 
-		int loc = str.length() - 1;
-
-		for (int i = 0; i < str.length(); i++) {
-			reverse[i] = str.charAt(loc);
-			loc--;
+		for (int i = str.length() - 1; i >= 0; i--) {
+			sb.append(str.charAt(i));
 		}
 
-		return new String(reverse);
+		return sb;
+
 	}
 
 	/**
@@ -144,19 +142,20 @@ public class StringUtil {
 	 * @param str
 	 * @return
 	 */
-	public String toUpperString(String str) {
+	public StringBuilder toUpperString(String str) {
 
-		char[] upper = new char[str.length()];
+		StringBuilder sb = new StringBuilder();
 
 		for (int i = 0; i < str.length(); i++) {
 			if (this.isLowerChar(str.charAt(i))) {
-				upper[i] = this.makeUpper(str.charAt(i));
+				sb.append(this.makeUpper(str.charAt(i)));
 			} else {
-				upper[i] = str.charAt(i);
+				sb.append(str.charAt(i));
 			}
 		}
 
-		return new String(upper);
+		return sb;
+
 	}
 
 	/**
@@ -176,19 +175,20 @@ public class StringUtil {
 	 * @param c
 	 * @return 변경된 문자열
 	 */
-	public String toLowerString(String str) {
+	public StringBuilder toLowerString(String str) {
 
-		char[] lower = new char[str.length()];
+		StringBuilder sb = new StringBuilder();
 
 		for (int i = 0; i < str.length(); i++) {
 			if (this.isUpperChar(str.charAt(i))) {
-				lower[i] = this.makeLower(str.charAt(i));
+				sb.append(this.makeLower(str.charAt(i)));
 			} else {
-				lower[i] = str.charAt(i);
+				sb.append(str.charAt(i));
 			}
 		}
 
-		return new String(lower);
+		return sb;
+
 	}
 
 	/**
@@ -202,17 +202,46 @@ public class StringUtil {
 		return (char) a;
 	}
 
-	public static int checkChar(String strData, char ch){
-		
+	/**
+	 * 문자열 비교 하여 해당 갯수를 리턴
+	 * 
+	 * @param strData
+	 * @param ch
+	 * @return char갯수
+	 */
+	public static int checkChar(String strData, char ch) {
+
 		int cnt = 0;
-		
-		for(int i=0;i<=strData.length();i++) {			
-			if(strData.charAt(i) == ch) {
+
+		for (int i = 0; i < strData.length(); i++) {
+			if (strData.charAt(i) == ch) {
 				cnt++;
 			}
 		}
 		return cnt;
-		
+
+	}
+
+	/**
+	 * 특정 문자 제거
+	 * 
+	 * @param oriStr
+	 * @param delChar
+	 * @return 제거된 문자열 리턴
+	 */
+	public static String removeChar(String oriStr, char delChar) {
+
+		char[] removeChar = new char[oriStr.length() - checkChar(oriStr, delChar)];
+
+		for (int i = 0, j = 0; i < oriStr.length(); i++) {
+			if (oriStr.charAt(i) != delChar) {
+				removeChar[j] = oriStr.charAt(i);
+				j++;
+			}
+		}
+
+		return new String(removeChar);
+
 	}
 
 }
