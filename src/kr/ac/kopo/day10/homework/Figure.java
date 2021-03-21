@@ -13,15 +13,22 @@ public class Figure {
 
 	}
 
+	public Figure(int garo) {
+		this.garo = garo;
+	}
+
 	public Figure(int garo, int sero) {
 		this.garo = garo;
 		this.sero = sero;
 	}
 	
+<<<<<<< HEAD
+=======
 	public Figure(int garo) {
 		this.garo = garo;
 	}
 
+>>>>>>> branch 'master' of https://github.com/JungHyunSeok-1125/java.git
 	public int getGaro() {
 		return garo;
 	}
