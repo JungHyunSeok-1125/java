@@ -24,9 +24,12 @@ public class Figure {
 	
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
+=======
 	public Figure(int garo) {
 		this.garo = garo;
 	}
+>>>>>>> branch 'master' of https://github.com/JungHyunSeok-1125/java.git
 
 >>>>>>> branch 'master' of https://github.com/JungHyunSeok-1125/java.git
 	public int getGaro() {

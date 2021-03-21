@@ -3,8 +3,7 @@ package kr.ac.kopo.day10.homework;
 import java.util.Random;
 import java.util.Scanner;
 
-<<<<<<< HEAD
-=======
+
 /**
  * printArea()
  * getArea()
@@ -12,7 +11,6 @@ import java.util.Scanner;
  * @author HP
  *
  */
->>>>>>> branch 'master' of https://github.com/JungHyunSeok-1125/java.git
 public class FigureMain {
 
 	Scanner sc = new Scanner(System.in);
