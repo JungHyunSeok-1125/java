@@ -1,7 +1,5 @@
 package kr.ac.kopo.day09.homework;
 
-import java.util.Scanner;
-
 public class StringUtilMain {
 
 	public static void main(String[] args) {
@@ -40,13 +38,13 @@ public class StringUtilMain {
 		System.out.println("8. 다음은 주어진 문자열에서 문자를 찾는 문제입니다. 입력값에 따라 다음과 같은 출력이 나오도록 해당 char 의 개수를 리턴하는 checkChar 메소드를 작성하시오.");
 		String strData = strUtil.getString("입력스트링 : ");
 		char ch = strUtil.getChar("문자를 입력하세요 : ");		
-		System.out.println("ch = \'"+ ch +"\'인 경우 => "+ StringUtil.checkChar(strData, ch) + " 리턴");
+		System.out.println("ch = \'"+ ch +"\'인 경우 " + " => "+ StringUtil.checkChar(strData, ch) + " 리턴");
 		
 		System.out.println("=======================");
 		System.out.println("9. 다음은 주어진 문자열에서 특정 문자를 제거하는 문제입니다.");
 		strData = strUtil.getString("입력스트링 : ");
 		ch = strUtil.getChar("문자를 입력하세요 : ");		
-		System.out.println("delChar = \'"+ ch +"\'인 경우 => "+ StringUtil.removeChar(strData, ch) + " 리턴");
+		System.out.println("delChar = \'"+ ch +"\'인 경우 " + " => "+ StringUtil.removeChar(strData, ch) + " 리턴");
 		
 		
 	}

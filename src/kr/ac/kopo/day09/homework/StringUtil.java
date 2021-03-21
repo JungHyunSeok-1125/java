@@ -134,6 +134,18 @@ public class StringUtil {
 
 		return sb;
 
+		/*int length = str.length
+		 * char[] chars = new char[length]
+		 * set.getChars(0, length, chars,0);
+		 * 
+		 *  for(int i=0, j=length -1; i<length/2; i++, j--) {
+		 *  char tmp = chars[i];
+		 *  chars[i] = chars [j];
+		 *  chars[j] = tmp;
+		 *  
+		 *  }
+		 *  
+		 *  return new String(chars);*/
 	}
 
 	/**
@@ -188,6 +200,7 @@ public class StringUtil {
 		}
 
 		return sb;
+		//return sb.toString();
 
 	}
 
