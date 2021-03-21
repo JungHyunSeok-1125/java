@@ -6,8 +6,7 @@ public class HomeworkMain {
 		
 		FigureMain figure = new FigureMain();
 		
-		
-		System.out.println("2. 도형 문제 다시 작성하세요");
+		System.out.println("도형 문제");
 		figure.figureService();
 		
 	}
