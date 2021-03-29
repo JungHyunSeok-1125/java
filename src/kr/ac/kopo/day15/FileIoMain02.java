@@ -31,6 +31,15 @@ public class FileIoMain02 {
 			//dog1 => dog2에 read write해준다.
 			
 			// 2. read / write
+			
+			
+			
+			/*
+			 int c = 0;
+			 while((c = fis.read())!= -1){
+			 	fos.write(c);
+			 }
+			 */
 			while(true) {
 				int c = fis.read();
 				if(c == -1) break;
