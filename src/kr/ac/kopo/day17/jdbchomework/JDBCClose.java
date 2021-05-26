@@ -1,4 +1,4 @@
-package kr.ac.kopo.util;
+package kr.ac.kopo.day17.jdbchomework;
 
 import java.sql.Connection;
 import java.sql.SQLException;
@@ -6,7 +6,7 @@ import java.sql.Statement;
 
 public class JDBCClose {
 
-	public static   void close(Connection conn, Statement pstmt) {
+	public static void close(Connection conn, Statement pstmt) {
 		
 		if (pstmt != null) {
 			try {
