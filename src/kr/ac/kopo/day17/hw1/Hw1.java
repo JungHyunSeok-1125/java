@@ -1,4 +1,4 @@
-package kr.ac.kopo.day17.homework;
+package kr.ac.kopo.day17.hw1;
 
 import java.io.File;
 import java.text.SimpleDateFormat;
